@@ -31,7 +31,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   request = gets.chomp
-
   if songs.include?(request)
     response = request
   elsif request.length == 1
@@ -50,7 +49,6 @@ end
 def run(songs)
   # help
   command = ""
-
   while command
     puts "Please enter a command:"
     command = gets.chomp
